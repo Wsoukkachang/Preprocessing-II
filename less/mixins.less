@@ -1,1 +1,37 @@
 // Mixins in here
+
+.button() {
+        width: 85%;
+        height: 45px;
+        text-decoration: none;
+        background-color: #0D7776;
+        border-radius: 14px;
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 45px;
+        vertical-align: middle;
+        flex-wrap: wrap;
+        cursor: pointer;
+        
+        & a {
+            text-decoration: none;
+            color: #FFFFFF;
+            display: block;
+        }
+        
+        & a:visited {
+            color: #FFFFFF;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        &:hover {
+            background-color: darken(#0D7776, 10%);
+            color: white;
+        }
+    }
+
+.btn {
+    .button;
+  }
