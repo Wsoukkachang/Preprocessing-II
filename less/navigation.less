@@ -1,7 +1,7 @@
 // Navigation Styles here
 
 .top-section{
-    border-bottom: 2px dashed #B9B9B9;
+    border-bottom: 2px dashed @silver;
     padding: 1.5% 0;
 }
 
@@ -11,10 +11,22 @@
     justify-content: space-between;
     margin: 0 auto;
 
+    @media @mobile {
+        flex-direction: column;
+    }
+
 }
 
 h1 {
     width: 50%;
+
+    @media @mobile {
+        width: 100%;
+        text-align: center;
+        padding: 2% 0;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .navigation {
@@ -23,6 +35,21 @@ h1 {
     align-items: center;
     width: 50%;
     padding-left: 12%;
+
+    @media @mobile {
+        width: 100%;
+
+        padding-left: 0;
+    }
+}
+
+nav {
+
+    @media @mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .navigation nav a {
@@ -33,5 +60,5 @@ h1 {
 }
 
 .navigation nav a:hover {
-    color: rgba(24, 132, 214, 0.377);
+    color: @eastern-blue;
 }
